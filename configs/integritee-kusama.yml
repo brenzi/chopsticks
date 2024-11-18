@@ -4,7 +4,7 @@ mock-signature-host: true
 block: ${env.INTEGRITEE_KUSAMA_BLOCK_NUMBER}
 db: ./integritee-kusama.db.sqlite
 runtime-log-level: 5
-# wasm-override: integritee_runtime.wasm
+wasm-override: /home/brenzi/integritee/parachain/target/release/wbuild/integritee-runtime/integritee_runtime.compact.compressed.wasm
 
 import-storage:
   System:
