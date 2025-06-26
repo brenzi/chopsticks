@@ -4,16 +4,22 @@ mock-signature-host: true
 block: ${env.INTEGRITEE_KUSAMA_BLOCK_NUMBER}
 db: ./integritee-kusama.db.sqlite
 runtime-log-level: 5
-# wasm-override: integritee_runtime.wasm
+wasm-override: ./integritee_kusama_runtime-560-dev2-sudo.compact.compressed.wasm
 
 import-storage:
-#  Sudo: # even if sudo isn't present in live chain, we may want this for wasm-override scenarios
-#    Key: 5GrwvaEF5zXb26Fz9rcQpDWS57CtERHpNehXCPcNoHGKutQY # Alice
+  Sudo: # even if sudo isn't present in live chain, we may want this for wasm-override scenarios
+    Key: 5GrwvaEF5zXb26Fz9rcQpDWS57CtERHpNehXCPcNoHGKutQY # Alice
   System:
     Account:
       -
         -
           - 5GrwvaEF5zXb26Fz9rcQpDWS57CtERHpNehXCPcNoHGKutQY
+        - providers: 1
+          data:
+            free: 1000000000000000
+      -
+        -
+          - 2JZNyFtn2KWCcgU6vM7Mh7TXR2BGCdewgPxZCQaofwcbF5cn # root origin AccountId { 0, Here }
         - providers: 1
           data:
             free: 1000000000000000

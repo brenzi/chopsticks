@@ -1,7 +1,8 @@
 endpoint: wss://kusama-asset-hub-rpc.polkadot.io
 mock-signature-host: true
-block: ${env.KUSAMA_ASSET_HUB_BLOCK_NUMBER}
+#block: ${env.KUSAMA_ASSET_HUB_BLOCK_NUMBER}
 db: ./db.sqlite
+runtime-log-level: 5
 
 import-storage:
   System:
