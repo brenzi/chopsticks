@@ -20,4 +20,6 @@ import-storage:
       - [[1337, 5GrwvaEF5zXb26Fz9rcQpDWS57CtERHpNehXCPcNoHGKutQY], { balance: 1000000000 }]
       - [[21, 5GrwvaEF5zXb26Fz9rcQpDWS57CtERHpNehXCPcNoHGKutQY], { balance: 1000000000 }]
     Asset: [[[21], { supply: 1000000000 }]]
-
+  PolkadotXcm:
+    SupportedVersion:
+      - [[5, { V5: { parents: 2, interior: { X2: [{ GlobalConsensus: Kusama }, { Parachain: 1000 }] } } }], 5]
