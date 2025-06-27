@@ -20,4 +20,5 @@ import-storage:
   PolkadotXcm:
     SupportedVersion:
       - [[5, { V5: { parents: 2, interior: { X2: [{ GlobalConsensus: Polkadot }, { Parachain: 1000 }] } } }], 5]
+      - [[ 5, { V5: { parents: 1, interior: { X1: [ { Parachain: 1002 } ] } } } ], 5]
 
