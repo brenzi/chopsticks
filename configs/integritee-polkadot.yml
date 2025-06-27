@@ -17,6 +17,12 @@ import-storage:
         - providers: 1
           data:
             free: 1000000000000000
+      -
+        -
+          - 2JZNyFtn2KWCcgU6vM7Mh7TXR2BGCdewgPxZCQaofwcbF5cn # root origin AccountId { 0, Here }
+        - providers: 1
+          data:
+            free: 1000000000000000
   Assets:
     Account:
       -
