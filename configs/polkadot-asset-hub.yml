@@ -3,6 +3,7 @@ mock-signature-host: true
 block: ${env.POLKADOT_ASSET_HUB_BLOCK_NUMBER}
 db: ./db.sqlite
 runtime-log-level: 5
+wasm-override: asset_hub_kusama_runtime_1.6.0_debug.compact.compressed.wasm
 
 import-storage:
   System:
