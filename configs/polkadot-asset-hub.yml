@@ -3,7 +3,7 @@ mock-signature-host: true
 block: ${env.POLKADOT_ASSET_HUB_BLOCK_NUMBER}
 db: ./db.sqlite
 runtime-log-level: 5
-wasm-override: asset_hub_kusama_runtime_1.6.0_debug.compact.compressed.wasm
+wasm-override: asset_hub_polkadot_runtime_1.6.0_debug.compact.compressed.wasm
 
 import-storage:
   System:
@@ -14,6 +14,13 @@ import-storage:
         - providers: 1
           data:
             free: 1000000000000000
+      -
+        -
+          - 14DXRZEfzojXowgGnamfGzTjnMERF9cVWRkdHHYQFiTsDiXB # sovereign account of IK on PAH
+        - providers: 1
+          data:
+            free: 1000000000000000
+
   Assets:
     Account:
       - [[1984, 5GrwvaEF5zXb26Fz9rcQpDWS57CtERHpNehXCPcNoHGKutQY], { balance: 1000000000 }]
