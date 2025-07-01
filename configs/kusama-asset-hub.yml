@@ -14,6 +14,12 @@ import-storage:
         - providers: 1
           data:
             free: 1000000000000000
+      -
+        -
+          - 1626x6zX5RFZH41vmfRAtYD4WWM7T5jcRUrpUhqp5bYpHeTX # sovereign account of IP on KAH
+        - providers: 1
+          data:
+            free: 1000000000000000
   Assets:
     Account:
       - [[1984, 5GrwvaEF5zXb26Fz9rcQpDWS57CtERHpNehXCPcNoHGKutQY], { balance: 1000000000 }]
