@@ -31,4 +31,3 @@ import-storage:
     SupportedVersion:
       - [[5, { V5: { parents: 2, interior: { X2: [{ GlobalConsensus: Kusama }, { Parachain: 1000 }] } } }], 5]
       - [[5, { V5: { parents: 1, interior: { X1: [{ Parachain: 1002 }] } } }], 5]
-      - [ [ 5, { V5: { parents: 1, interior: { X1: [ { Parachain: 2039 } ] } } } ], 5 ]
