@@ -4,7 +4,7 @@ mock-signature-host: true
 block: ${env.INTEGRITEE_KUSAMA_BLOCK_NUMBER}
 db: ./integritee-kusama.db.sqlite
 runtime-log-level: 5
-wasm-override: ./integritee_kusama_runtime-560-dev2.6-sudo.compact.compressed.wasm
+wasm-override: ./integritee_kusama_runtime-561-dev-sudo.compact.compressed.wasm
 
 import-storage:
   Sudo: # even if sudo isn't present in live chain, we may want this for wasm-override scenarios
