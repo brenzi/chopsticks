@@ -9,6 +9,16 @@ wasm-override: ./integritee_kusama_runtime-561-dev-sudo.compact.compressed.wasm
 import-storage:
   Sudo: # even if sudo isn't present in live chain, we may want this for wasm-override scenarios
     Key: 5GrwvaEF5zXb26Fz9rcQpDWS57CtERHpNehXCPcNoHGKutQY # Alice
+  Porteer:
+    WatchdogAccount: 5GrwvaEF5zXb26Fz9rcQpDWS57CtERHpNehXCPcNoHGKutQY # Alice
+    PorteerConfigValue:
+      - sendEnabled: true
+      - receiveEnabled: true
+    XcmFeeConfig:
+      - localEquivalentSum: 42
+      - hop1: 33000000000000
+      - hop2: 3000000000000
+      - hop3: 1000000000000
   System:
     Account:
       -

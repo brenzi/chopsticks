@@ -9,6 +9,16 @@ wasm-override: ./integritee_polkadot_runtime-561-dev.compact.compressed.wasm
 import-storage:
   Sudo:
     Key: 5GrwvaEF5zXb26Fz9rcQpDWS57CtERHpNehXCPcNoHGKutQY # Alice
+  Porteer:
+    WatchdogAccount: 5GrwvaEF5zXb26Fz9rcQpDWS57CtERHpNehXCPcNoHGKutQY # Alice
+    PorteerConfigValue:
+      - sendEnabled: true
+      - receiveEnabled: true
+    XcmFeeConfig:
+      - localEquivalentSum: 42000000000
+      - hop1: 10000000000000
+      - hop2: 10000000000
+      - hop3: 200000000000
   System:
     Account:
       -
