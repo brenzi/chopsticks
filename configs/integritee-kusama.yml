@@ -1,7 +1,7 @@
 endpoint:
   - wss://kusama.api.integritee.network
 mock-signature-host: true
-block: ${env.INTEGRITEE_KUSAMA_BLOCK_NUMBER}
+#block: ${env.INTEGRITEE_KUSAMA_BLOCK_NUMBER}
 db: ./integritee-kusama.db.sqlite
 runtime-log-level: 5
 wasm-override: ./integritee_kusama_runtime-561-dev-sudo.compact.compressed.wasm
@@ -15,7 +15,7 @@ import-storage:
       - sendEnabled: true
       - receiveEnabled: true
     XcmFeeConfig:
-      - localEquivalentSum: 42
+      - localEquivalentSum: 41000000000
       - hop1: 33000000000000
       - hop2: 3000000000000
       - hop3: 1000000000000
