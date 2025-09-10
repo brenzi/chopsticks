@@ -4,7 +4,7 @@ mock-signature-host: true
 #block: ${env.INTEGRITEE_POLKADOT_BLOCK_NUMBER}
 db: ./integritee-polkadot.db.sqlite
 runtime-log-level: 5
-wasm-override: ./integritee_polkadot_runtime-561-dev.compact.compressed.wasm
+wasm-override: ./integritee_polkadot_runtime-562-dev.compact.compressed.wasm
 
 import-storage:
   Sudo:
