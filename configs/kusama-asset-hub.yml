@@ -23,6 +23,9 @@ import-storage:
   Assets:
     Account:
       - [[1984, 5GrwvaEF5zXb26Fz9rcQpDWS57CtERHpNehXCPcNoHGKutQY], { balance: 1000000000 }]
+  ForeignAssets:
+    Account:
+      - [[ { parents: 1, interior: { X1: [{ Parachain: 2015 }] } }, 5GrwvaEF5zXb26Fz9rcQpDWS57CtERHpNehXCPcNoHGKutQY], { balance: 9000000000000000 }]
   PolkadotXcm:
     SupportedVersion:
       - [[5, { V5: { parents: 2, interior: { X2: [{ GlobalConsensus: Polkadot }, { Parachain: 1000 }] } } }], 5]
